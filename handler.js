@@ -1,7 +1,6 @@
 'use strict';
 const updateLocation = require('./api/update-location');
 const getLocations = require('./api/get-locations');
-const customAuth = require('./api/custom-auth');
 
 module.exports.getLocations = (event, context, callback) => {
  return getLocations()

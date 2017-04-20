@@ -51,7 +51,6 @@ functions:
     handler: handler.updateLocation
     events: # All events associated with this function
     - http:
-        authorizer: customAuth
         path: location
         method: post
   getLocations:
@@ -72,7 +71,7 @@ resources:
         AttributeDefinitions:
           -
             AttributeName: trackid
-            AttributeType: S
+            AttributeType: N
         KeySchema:
           -
             AttributeName: trackid
