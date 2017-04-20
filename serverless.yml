@@ -51,10 +51,11 @@ functions:
     handler: handler.updateLocation
     events: # All events associated with this function
     - http:
+        authorizer: customAuth
         path: location
         method: post
-  getLocation:
-    handler: handler.getLocation
+  getLocations:
+    handler: handler.getLocations
     events: # All events associated with this function
     - http:
         path: location
